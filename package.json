@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
