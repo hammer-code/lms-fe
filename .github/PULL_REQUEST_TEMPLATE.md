@@ -1,8 +1,9 @@
 ## Ticket : ex: HMC-xx
+
 ## Description :
 
--   Fix something bla bla / add feature lala
+- Fix something bla bla / add feature lala
 
 ## Screenshots / Video Record:
 
--   Add image/video here...
+- Add image/video here...
