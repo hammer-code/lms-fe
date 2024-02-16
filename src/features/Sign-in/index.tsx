@@ -1,4 +1,10 @@
+import { Button } from '@/components/ui/button';
+
 const SignIn = () => {
-  return <div>Ini SignIn</div>;
+  return (
+    <div>
+      <Button>Sign In</Button>
+    </div>
+  );
 };
 export default SignIn;
