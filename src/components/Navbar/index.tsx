@@ -12,6 +12,7 @@ import {
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
+import { MainMenu } from '@/constants/menu';
 
 const Navbar: FC = () => {
   const [scroll, setScroll] = useState(false);
@@ -20,29 +21,6 @@ const Navbar: FC = () => {
       setScroll(window.scrollY > 10);
     });
   }, []);
-
-  const NavListItem = [
-    {
-      id: 1,
-      title: 'Home'
-    },
-    {
-      id: 2,
-      title: 'About'
-    },
-    {
-      id: 3,
-      title: 'Learning Path'
-    },
-    {
-      id: 4,
-      title: 'Testimonial'
-    },
-    {
-      id: 5,
-      title: 'FAQ'
-    }
-  ];
 
   return (
     <header
@@ -63,7 +41,7 @@ const Navbar: FC = () => {
           <div className="flex items-center text-xs ml-auto">
             <nav className="text-black leading-6 font-semibold">
               <ul className="hidden lg:flex gap-x-6">
-                {NavListItem.map(item => (
+                {MainMenu.map(item => (
                   <li key={item.id}>
                     <Link
                       href=""
@@ -83,7 +61,7 @@ const Navbar: FC = () => {
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="mr-4">
-                  {NavListItem.map(item => (
+                  {MainMenu.map(item => (
                     <DropdownMenuItem key={item.id}>
                       <Link
                         href=""
