@@ -78,7 +78,7 @@ const Navbar: FC = () => {
             <Button
               asChild
               size="sm"
-              className="rounded-full ml-4 px-6 bg-hmc-base hover:bg-hmc-hover-base"
+              className="rounded-full ml-4 px-6 bg-hmc-base hover:bg-hmc-hover-base text-xs"
             >
               <Link href="">Sign Up</Link>
             </Button>
