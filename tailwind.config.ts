@@ -51,6 +51,13 @@ const config = {
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))'
+        },
+        hmc: {
+          base: '#00CCFF',
+          dark: '#1F4C8F',
+          hover: {
+            base: '#00CCFF'
+          }
         }
       },
       borderRadius: {
