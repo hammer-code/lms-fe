@@ -1,4 +1,6 @@
-export const MainMenu = [
+import { MainMenuType } from '@/constants/interfaces';
+
+export const MainMenu: MainMenuType[] = [
   {
     id: 1,
     title: 'Home'
