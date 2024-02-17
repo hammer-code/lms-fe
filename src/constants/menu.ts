@@ -1,4 +1,4 @@
-import { MainMenuType } from '@/constants/interfaces';
+import { MainMenuType } from '@/types/types';
 
 export const MainMenu: MainMenuType[] = [
   {
