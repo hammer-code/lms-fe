@@ -37,7 +37,7 @@ const Navbar: FC = () => {
 
   return (
     <header
-      className={`w-full fixed top-0 z-10 flex-none transition-colors duration-500 shadow-sm border-none ${scroll ? 'backdrop-blur-lg' : 'bg-transparent'}`}
+      className={`w-full sticky top-0 z-10 flex-none transition-colors duration-500 shadow-sm border-none ${scroll ? 'backdrop-blur-lg' : 'bg-transparent'}`}
     >
       <div className="container mx-auto px-4 h-full">
         <div className="py-4 flex items-center h-full">
