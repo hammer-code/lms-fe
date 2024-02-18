@@ -4,6 +4,7 @@ export interface MainMenuType {
 }
 
 export interface LogoPartnersType {
-  src?: string;
+  src: string | undefined;
   alt?: string;
+  width?: number;
 }

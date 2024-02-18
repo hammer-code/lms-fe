@@ -6,7 +6,6 @@ import {
   CardTitle
 } from '@/components/ui/card';
 import { logoPartners } from '@/constants/images';
-import next from 'next';
 import { FC } from 'react';
 import Image from 'next/image';
 
@@ -26,9 +25,10 @@ const CardPartners: FC = () => {
           {logoPartners.map((item, index) => (
             <Image
               key={index}
-              src={`../assets/img/${item.src}`}
+              src={`/../assets/img/${item.src}`}
               alt={`${item.alt}`}
-              className="w-[210px]"
+              width={200}
+              height={300}
             />
           ))}
         </CardContent>
