@@ -1,8 +1,8 @@
 import { LogoPartnersType } from '@/types/types';
 
 export const logoPartners: LogoPartnersType[] = [
-  { src: 'shipper.png' },
-  { src: 'efishery.png' },
-  { src: 'icehouse.png' },
-  { src: 'learning.png' }
+  { alt: 'shipper', src: 'shipper.png' },
+  { alt: 'efishery', src: 'efishery.png' },
+  { alt: 'icehouse', src: 'icehouse.png' },
+  { alt: 'learning', src: 'learning.png' }
 ];

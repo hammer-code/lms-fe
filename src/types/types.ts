@@ -5,4 +5,5 @@ export interface MainMenuType {
 
 export interface LogoPartnersType {
   src?: string;
+  alt?: string;
 }

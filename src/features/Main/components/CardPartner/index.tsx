@@ -6,7 +6,9 @@ import {
   CardTitle
 } from '@/components/ui/card';
 import { logoPartners } from '@/constants/images';
+import next from 'next';
 import { FC } from 'react';
+import Image from 'next/image';
 
 const CardPartners: FC = () => {
   return (
@@ -22,10 +24,10 @@ const CardPartners: FC = () => {
         </CardHeader>
         <CardContent className="flex flex-wrap gap-4 justify-center">
           {logoPartners.map((item, index) => (
-            <img
+            <Image
               key={index}
               src={`../assets/img/${item.src}`}
-              alt=""
+              alt={`${item.alt}`}
               className="w-[210px]"
             />
           ))}
