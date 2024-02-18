@@ -6,14 +6,9 @@ import {
   CardTitle
 } from '@/components/ui/card';
 import { FC } from 'react';
+import logoPartners from './Images';
 
 const CardPartners: FC = () => {
-  const Images = [
-    { src: 'efishery.png' },
-    { src: 'icehouse.png' },
-    { src: 'learning.png' },
-    { src: 'shipper.png' }
-  ];
   return (
     <div className="flex justify-center">
       <Card className="w-full md:w-4/5 max-w-screen-lg rounded-3xl shadow-xl p-2">
@@ -26,7 +21,7 @@ const CardPartners: FC = () => {
           </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-wrap gap-4 justify-center">
-          {Images.map((item, index) => (
+          {logoPartners.map((item, index) => (
             <img
               key={index}
               src={`../assets/img/${item.src}`}
