@@ -1,6 +1,5 @@
-import Image from 'next/image';
+'use client';
 import { FC, useEffect, useState } from 'react';
-import logoHmc from '/public/logo-hmc.svg';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import {

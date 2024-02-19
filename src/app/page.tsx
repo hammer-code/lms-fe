@@ -1,6 +1,11 @@
-'use client';
-import MainPage from '@/features/Main';
+import { NextPage } from 'next';
+import dynamic from 'next/dynamic';
+import { FC } from 'react';
 
-export default function Home() {
+const MainPage = dynamic(() => import('../features/Main'), { ssr: false });
+
+const Home: FC<NextPage> = () => {
   return <MainPage />;
-}
+};
+
+export default Home;
