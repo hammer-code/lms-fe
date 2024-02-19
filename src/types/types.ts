@@ -8,3 +8,9 @@ export interface LogoPartnersType {
   alt?: string;
   width?: number;
 }
+
+export interface ImageCarouselType {
+  src: string;
+  alt: string;
+  key?: null | undefined;
+}
