@@ -18,3 +18,8 @@ export type DashboardMenuType = {
   path: string;
   isChildren: boolean;
 };
+
+export interface SidebarContextProps {
+  isOpen?: boolean;
+  toggleSidebar?: () => void;
+}

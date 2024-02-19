@@ -1,7 +1,5 @@
-import {
-  SidebarContext,
-  SidebarContextProps
-} from '@/providers/sidebarProvider';
+import { SidebarContext } from '@/providers/sidebarProvider';
+import { SidebarContextProps } from '@/types';
 import { useContext } from 'react';
 
 export const useSidebar = (): SidebarContextProps => {
