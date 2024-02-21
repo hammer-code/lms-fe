@@ -27,6 +27,9 @@ const OurClass = () => {
                   alt={`${image.alt}`}
                   className="rounded-t-md"
                 />
+                <div>
+                  
+                </div>
                 <h1 className="text-left font-bold text-[#0F3665]">
                   Product Management Basic - Course
                 </h1>
