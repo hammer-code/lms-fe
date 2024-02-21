@@ -1,6 +1,7 @@
+import { SocialMediaType } from '@/types/types';
 import { DiscordLogoIcon, InstagramLogoIcon } from '@radix-ui/react-icons';
 
-export const SocialMedia= [
+export const SocialMedia: SocialMediaType[]= [
   {
     title: 'Instagram',
     icon: InstagramLogoIcon,
