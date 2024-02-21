@@ -13,4 +13,11 @@ export interface ImageCarouselType {
   src: string;
   alt: string;
   key?: null | undefined;
+  id: number;
+}
+
+export interface LogoCarouselType {
+  id: number;
+  src: string;
+  alt: string;
 }
