@@ -11,14 +11,16 @@ import Image from 'next/image';
 
 const CardPartners: FC = () => {
   return (
-    <div className="flex justify-center">
-      <Card className="w-full md:w-4/5 max-w-screen-lg rounded-3xl shadow-xl p-2">
+    <div className="flex justify-center p-4">
+      <Card className=" md:w-4/5 max-w-screen-lg rounded-3xl shadow-xl p-2">
         <CardHeader>
-          <CardTitle className="text-[#00CCFF] flex justify-center text-center">
+          <CardTitle className="text-[#00CCFF] md:text-xl text-lg flex justify-center text-center">
             Learning From Our Expert Tech
           </CardTitle>
-          <CardDescription className="text-[#0F3665] max-w-[80%] md:max-w-full mx-auto md:mx-0 text-center flex justify-center">
-            Take the opportunity to learn from experts from tech companies
+          <CardDescription className="text-[#0F3665] mx-auto md:mx-0 text-center flex justify-center">
+            <p className="text-sm">
+              Take the opportunity to learn from experts from tech companies
+            </p>
           </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-wrap gap-4 justify-center">
@@ -27,8 +29,10 @@ const CardPartners: FC = () => {
               key={index}
               src={`/../assets/img/${item.src}`}
               alt={`${item.alt}`}
-              width={200}
-              height={300}
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="md:w-40 w-24"
             />
           ))}
         </CardContent>

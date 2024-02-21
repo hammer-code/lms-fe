@@ -20,4 +20,5 @@ export interface LogoCarouselType {
   id: number;
   src: string;
   alt: string;
+  text: string;
 }
