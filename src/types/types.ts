@@ -10,15 +10,15 @@ export interface LogoPartnersType {
 }
 
 export interface ImageCarouselType {
-  src: string;
-  alt: string;
+  src?: string;
+  alt?: string;
   key?: null | undefined;
-  id: number;
+  id?: number;
 }
 
 export interface LogoCarouselType {
-  id: number;
-  src: string;
-  alt: string;
-  text: string;
+  id?: number;
+  src?: string;
+  alt?: string;
+  text?: string;
 }
