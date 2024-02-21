@@ -6,7 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious
 } from '@/components/ui/carousel';
-import { imagecarousel, logocarousel } from '@/constants/imgcarousel';
+import { imagecarousel, logocarousel } from '@/constants/carousel';
 import Image from 'next/image';
 
 const OurClass = () => {
@@ -28,7 +28,7 @@ const OurClass = () => {
                   className="rounded-t-md"
                 />
                 <div>
-                  
+
                 </div>
                 <h1 className="text-left font-bold text-[#0F3665]">
                   Product Management Basic - Course
