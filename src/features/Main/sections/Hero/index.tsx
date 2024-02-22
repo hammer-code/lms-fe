@@ -19,11 +19,11 @@ const Hero: FC = () => {
         <div className="flex gap-3">
           {SocialMedia.map((item, index) => {
             return (
-              <div key={index}>
-                <Link href={`${item.url}`} target="blank">
-                  <item.icon width={32} height={32} />
-                </Link>
-              </div>
+              <Link href={`${item.url}`} key={index} target="blank">
+                <div className={`${item.bgColor} p-3 rounded-full`}>
+                  <item.icon width={24} height={24} className="text-white" />
+                </div>
+              </Link>
             );
           })}
         </div>
