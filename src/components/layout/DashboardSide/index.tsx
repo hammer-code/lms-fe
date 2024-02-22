@@ -1,3 +1,4 @@
+'use client';
 import { useSidebar } from '@/hooks/useSidebar';
 import { cn } from '@/lib/utils';
 import { ChevronRight } from 'lucide-react';
@@ -8,8 +9,8 @@ const DashboardSide = () => {
   return (
     <div
       className={cn(
-        'relative h-screen border-r pt-24 md:block transition-all duration-500',
-        isOpen ? 'w-72' : 'w-20'
+        'relative h-screen border-r pt-24 hidden md:block duration-500',
+        isOpen ? 'w-72' : 'w-[85px]'
       )}
     >
       <ChevronRight

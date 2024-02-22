@@ -23,3 +23,7 @@ export interface SidebarContextProps {
   isOpen?: boolean;
   toggleSidebar?: () => void;
 }
+
+export interface MenuSidebarProps {
+  setOpen?: (open: boolean) => void;
+}

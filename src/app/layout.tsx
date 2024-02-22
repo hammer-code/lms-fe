@@ -1,4 +1,4 @@
-import { SidebarProvider } from '@/providers/sidebarProvider';
+import { LayoutContainer } from '@/components/layout/LayoutContainer';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
@@ -21,8 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
-        <SidebarProvider>{children}</SidebarProvider>
+      <body className={poppins.className} suppressHydrationWarning={true}>
+        <LayoutContainer>{children}</LayoutContainer>
       </body>
     </html>
   );

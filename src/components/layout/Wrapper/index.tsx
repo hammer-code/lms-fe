@@ -3,7 +3,6 @@ import React from 'react';
 import { ThemeProvider } from '@/components/common/ThemeProvider';
 import DashboardNav from '../DashboardNav';
 import DashboardSide from '../DashboardSide';
-import { SidebarProvider } from '@/providers/sidebarProvider';
 
 const Wrapper = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -20,7 +19,7 @@ const Wrapper = ({ children }: { children: React.ReactNode }) => {
             <DashboardNav />
             <div className="flex h-screen border-collapse overflow-hidden w-full">
               <main className="flex-1 overflow-y-auto overflow-x-hidden pt-16 pb-1">
-                {children}
+                <div className="p-7">{children}</div>
               </main>
             </div>
           </div>
