@@ -1,9 +1,5 @@
-import dynamic from 'next/dynamic';
+import Navbar from '@/components/layout/Navbar';
 import CardPartners from './components/CardPartner';
-
-const Navbar = dynamic(() => import('../../components/layout/Navbar'), {
-  ssr: false
-});
 
 const Main = () => {
   return (
