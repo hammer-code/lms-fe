@@ -12,8 +12,9 @@ export interface LogoPartnersType {
   width?: number;
 }
 
-export interface SocialMediaType{
+export interface SocialMediaType {
   title?: string;
   icon: ComponentType<IconProps>;
+  bgColor: string;
   url?: string; 
 }
