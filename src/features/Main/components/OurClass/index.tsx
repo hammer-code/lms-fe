@@ -22,7 +22,7 @@ const OurClass: FC = () => {
             >
               <Card className="md:w-[300px] w-[200px] shadow-xl">
                 <Image
-                  src={`@assets/imgcarousel/${image.src}`}
+                  src={`/../assets/imgcarousel/${image.src}`}
                   width={0}
                   alt={image.alt}
                   height={0}
@@ -43,7 +43,7 @@ const OurClass: FC = () => {
                     {logocarousel.map(logo => (
                       <div key={logo.id} className="flex">
                         <Image
-                          src={`@assets/logocarousel/${logo.src}`}
+                          src={`/../assets/logocarousel/${logo.src}`}
                           alt={`${logo.alt}`}
                           width={14}
                           height={16}
