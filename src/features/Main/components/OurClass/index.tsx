@@ -12,6 +12,7 @@ import Image from 'next/image';
 import { FC } from 'react';
 
 const OurClass: FC = () => {
+  const resizeImagesId = [3, 4];
   return (
     <div className="mx-16 md:mx-8 lg:mx-24 my-12">
       <Carousel className="">
@@ -28,7 +29,7 @@ const OurClass: FC = () => {
                   alt={image.alt ?? ''}
                   height={0}
                   sizes="100vw"
-                  className="rounded-t-md"
+                  className={`${resizeImagesId.includes(image.id) ? 'w-full h-[175px]' : 'w-full h-auto'} object-cover rounded-t-md`}
                 />
                 <div className="mx-4 mt-4">
                   <h1 className="text-left font-bold text-[#0F3665]">
