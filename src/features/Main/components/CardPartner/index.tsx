@@ -1,3 +1,4 @@
+'use client';
 import {
   Card,
   CardContent,
@@ -8,6 +9,7 @@ import {
 import { logoPartners } from '@/constants/images';
 import { FC } from 'react';
 import Image from 'next/image';
+import { getAssetUrl } from '@/lib/utils';
 
 const CardPartners: FC = () => {
   return (
@@ -27,7 +29,7 @@ const CardPartners: FC = () => {
           {logoPartners.map((item, index) => (
             <Image
               key={index}
-              src={`/../assets/img/${item.src}`}
+              src={`${getAssetUrl(`/img/${item.src}`)}`}
               alt={`${item.alt}`}
               width={0}
               height={0}

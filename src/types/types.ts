@@ -11,7 +11,7 @@ export interface LogoPartnersType {
 
 export interface ImageCarouselType {
   src?: string;
-  alt?: string;
+  alt?: string | undefined;
   key?: null | undefined;
   id?: number;
 }

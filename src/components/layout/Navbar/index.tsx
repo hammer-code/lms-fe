@@ -1,6 +1,5 @@
-import Image from 'next/image';
+'use client';
 import { FC, useEffect, useState } from 'react';
-import logoHmc from '/public/logo-hmc.svg';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import {
@@ -11,6 +10,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import { MainMenu } from '@/constants/menu';
+import HmcLogo from '@/components/common/HmcLogo';
 
 const Navbar: FC = () => {
   const [scroll, setScroll] = useState(false);
@@ -26,18 +26,7 @@ const Navbar: FC = () => {
     >
       <div className="container mx-auto px-4 h-full">
         <div className="py-4 flex items-center justify-between h-full">
-          <div className="flex items-center">
-            <Image
-              src={logoHmc}
-              width={38}
-              height={31}
-              alt="Logo HMC"
-              className="mr-2"
-            />
-            <h1 className="text-lg text-hmc-dark font-bold">
-              hmc<span className="text-hmc-base">learn</span>
-            </h1>
-          </div>
+          <HmcLogo type="main" />
           <nav className="text-black leading-6 font-semibold text-xs">
             <ul className="hidden md:flex gap-x-6">
               {MainMenu.map(item => (
