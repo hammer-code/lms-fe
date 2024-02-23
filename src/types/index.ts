@@ -50,3 +50,9 @@ export interface SocialMediaType {
   bgColor: string;
   url?: string;
 }
+
+export interface FAQType {
+  id: string;
+  question?: string;
+  answer?: string;
+}
