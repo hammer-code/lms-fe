@@ -30,9 +30,23 @@ export interface MenuSidebarProps {
   setOpen?: (open: boolean) => void;
 }
 
+export interface ImageCarouselType {
+  src?: string;
+  alt?: string | undefined;
+  key?: null | undefined;
+  id?: number;
+}
+
+export interface LogoCarouselType {
+  id?: number;
+  src?: string;
+  alt?: string;
+  text?: string;
+}
+
 export interface SocialMediaType {
   title?: string;
   icon: ComponentType<IconProps>;
   bgColor: string;
-  url?: string; 
+  url?: string;
 }

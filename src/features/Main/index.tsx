@@ -1,5 +1,6 @@
-import Navbar from '@/components/layout/Navbar';
+import Navbar from '../../components/layout/Navbar';
 import CardPartners from './components/CardPartner';
+import OurClass from './components/OurClass';
 import Hero from './sections/Hero';
 
 const Main = () => {
@@ -8,6 +9,7 @@ const Main = () => {
       <Navbar />
       <Hero />
       <CardPartners />
+      <OurClass />
     </div>
   );
 };
