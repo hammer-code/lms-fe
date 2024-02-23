@@ -23,7 +23,6 @@ const OurClass: FC = () => {
             >
               <Card className="md:w-[300px] w-[200px] shadow-xl">
                 <Image
-                  // src={`/../assets/imgcarousel/${image.src}`}
                   src={getAssetUrl(`/imgcarousel/${image.src}`)}
                   width={0}
                   alt={image.alt ?? ''}
