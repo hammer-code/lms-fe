@@ -7,7 +7,7 @@ import {
 } from '@/components/ui/accordion';
 import { Card, CardContent } from '@/components/ui/card';
 import { FAQ } from '@/constants/faq';
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 const AccordionFAQ: FC = () => {
   return (
