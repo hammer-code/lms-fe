@@ -1,4 +1,6 @@
 import { LucideIcon } from 'lucide-react';
+import { ComponentType } from 'react';
+import { IconProps } from '@radix-ui/react-icons/dist/types';
 
 export interface MainMenuType {
   id?: number;
@@ -40,4 +42,11 @@ export interface LogoCarouselType {
   src?: string;
   alt?: string;
   text?: string;
+}
+
+export interface SocialMediaType {
+  title?: string;
+  icon: ComponentType<IconProps>;
+  bgColor: string;
+  url?: string;
 }
