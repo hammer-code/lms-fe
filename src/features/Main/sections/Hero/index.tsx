@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import HeroImage from '../../../../../public/assets/img/Hero.svg';
+import HeroImage from '@/assets/img/Hero.svg';
 import { FC } from 'react';
 import { SocialMedia } from '@/constants/socialMedia';
-
 
 const Hero: FC = () => {
   return (
@@ -13,12 +12,12 @@ const Hero: FC = () => {
           Improve Your Skill by Talking High-Quality Classes
         </h1>
         <p className="text-sm">
-          <strong>HMCLearn</strong> is a streamlined and user-friendly Learning
-          Management System (LMS) dedicated to efficient learning material
-          management and accessibility.
+          <b>HMCLearn</b> is a streamlined and user-friendly Learning Management
+          System (LMS) dedicated to efficient learning material management and
+          accessibility.
         </p>
         <div className="flex gap-3">
-        {SocialMedia.map((item, index) => {
+          {SocialMedia.map((item, index) => {
             return (
               <Link href={`${item.url}`} key={index} target="blank">
                 <div className={`${item.bgColor} p-3 rounded-full`}>
