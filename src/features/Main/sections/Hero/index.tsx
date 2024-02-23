@@ -6,8 +6,8 @@ import { SocialMedia } from '@/constants/socialMedia';
 
 const Hero: FC = () => {
   return (
-    <div className="container mx-auto px-4 flex items-center justify-between">
-      <div className="w-2/5 flex flex-col gap-6">
+    <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between my-6">
+      <div className=" md:w-2/5 flex flex-col gap-6">
         <h1 className="text-5xl font-semibold text-[#0F3665]">
           Improve Your Skill by Talking High-Quality Classes
         </h1>
@@ -21,14 +21,14 @@ const Hero: FC = () => {
             return (
               <Link href={`${item.url}`} key={index} target="blank">
                 <div className={`${item.bgColor} p-3 rounded-full`}>
-                  <item.icon width={24} height={24} className="text-white" />
+                  <item.icon className="text-white w-5 h-5 md:w-6 md:h-6" />
                 </div>
               </Link>
             );
           })}
         </div>
       </div>
-      <div className="w-1/2">
+      <div className="md:w-1/2">
         <Image src={HeroImage} alt="Hero Image" />
       </div>
     </div>
