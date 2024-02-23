@@ -28,7 +28,6 @@ const OurClass: FC = () => {
                   alt={image.alt ?? ''}
                   height={0}
                   sizes="100vw"
-                  style={{ width: '100%', height: 'auto' }}
                   className="rounded-t-md"
                 />
                 <div className="mx-4 mt-4">
@@ -44,7 +43,7 @@ const OurClass: FC = () => {
                     {logocarousel.map(logo => (
                       <div key={logo.id} className="flex">
                         <Image
-                          src={`/../assets/logocarousel/${logo.src}`}
+                          src={getAssetUrl(`/logocarousel/${logo.src}`)}
                           alt={`${logo.alt}`}
                           width={14}
                           height={16}
