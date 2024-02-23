@@ -1,4 +1,4 @@
-import { LogoPartnersType } from '@/types/types';
+import { LogoPartnersType } from '@/types';
 
 export const logoPartners: LogoPartnersType[] = [
   { alt: 'shipper', src: 'shipper.png' },

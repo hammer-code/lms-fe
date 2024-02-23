@@ -65,6 +65,10 @@ const config = {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)'
       },
+      backgroundImage: {
+        root: 'var(--image)',
+        dark: 'var(--image-dark)'
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },

@@ -7,6 +7,7 @@ import {
   CarouselPrevious
 } from '@/components/ui/carousel';
 import { imagecarousel, logocarousel } from '@/constants/carousel';
+import { getAssetUrl } from '@/lib/utils';
 import Image from 'next/image';
 import { FC } from 'react';
 
@@ -22,9 +23,9 @@ const OurClass: FC = () => {
             >
               <Card className="md:w-[300px] w-[200px] shadow-xl">
                 <Image
-                  src={`/../assets/imgcarousel/${image.src}`}
+                  src={getAssetUrl(`/imgcarousel/${image.src}`)}
                   width={0}
-                  alt={image.alt}
+                  alt={image.alt ?? ''}
                   height={0}
                   sizes="100vw"
                   style={{ width: '100%', height: 'auto' }}

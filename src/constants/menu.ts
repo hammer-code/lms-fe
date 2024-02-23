@@ -1,4 +1,5 @@
-import { MainMenuType } from '@/types/types';
+import { DashboardMenuType, MainMenuType } from '@/types';
+import { Mail, NotebookPen } from 'lucide-react';
 
 export const MainMenu: MainMenuType[] = [
   {
@@ -20,5 +21,22 @@ export const MainMenu: MainMenuType[] = [
   {
     id: 5,
     title: 'FAQ'
+  }
+];
+
+export const DashboardMenu: DashboardMenuType[] = [
+  {
+    id: 1,
+    title: 'Dashboard',
+    icon: Mail,
+    path: '/dashboard',
+    isChildren: false
+  },
+  {
+    id: 2,
+    title: 'Course',
+    icon: NotebookPen,
+    path: '/dashboard/course',
+    isChildren: false
   }
 ];
