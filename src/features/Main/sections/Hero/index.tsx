@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import HeroImage from '../../../../../public/assets/img/Hero.svg';
 import { FC } from 'react';
+import { SocialMedia } from '@/constants/socialMedia';
 
 
 const Hero: FC = () => {
@@ -16,7 +18,15 @@ const Hero: FC = () => {
           management and accessibility.
         </p>
         <div className="flex gap-3">
-          
+        {SocialMedia.map((item, index) => {
+            return (
+              <Link href={`${item.url}`} key={index} target="blank">
+                <div className={`${item.bgColor} p-3 rounded-full`}>
+                  <item.icon className="text-white w-5 h-5 md:w-6 md:h-6" />
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
       <div className="md:w-1/2">
