@@ -1,6 +1,7 @@
 import { getAssetUrl } from '@/lib/utils';
+import { TestimoniType } from '@/types';
 
-export const testimoni = [
+export const testimoni: TestimoniType[] = [
   {
     name: 'Abdul Rojak',
     img: getAssetUrl('/img/person.jpg'),
