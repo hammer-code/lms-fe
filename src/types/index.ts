@@ -56,3 +56,9 @@ export interface FAQType {
   question?: string;
   answer?: string;
 }
+
+export interface TestimoniType {
+  name?: string;
+  img?: string;
+  comment?: string;
+}
