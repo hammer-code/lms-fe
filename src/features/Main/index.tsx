@@ -1,6 +1,7 @@
 import Navbar from '../../components/layout/Navbar';
 import AccordionFAQ from './components/AccordionFAQ';
 import CardPartners from './components/CardPartner';
+import Footer from './components/Footer';
 import LearnMore from './components/LearnMoreButton';
 import OurClass from './components/OurClass';
 import OurClassText from './components/OurClassText';
@@ -18,6 +19,7 @@ const Main = () => {
       <LearnMore />
       <Testimonial />
       <AccordionFAQ />
+      <Footer />
     </div>
   );
 };
