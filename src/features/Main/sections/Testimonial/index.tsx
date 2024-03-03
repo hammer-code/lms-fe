@@ -39,7 +39,7 @@ const Testimonial: FC = () => {
                 <CarouselItem key={index}>
                   <div className="absolute w-[12rem] h-[16rem] md:w-[15rem] md:h-[24rem] lg:w-[20rem] lg:h-[32rem] rounded-xl drop-shadow-lg">
                     <Image
-                      src={items.img}
+                      src={`${items.img}`}
                       layout="fill"
                       objectFit="cover"
                       alt="image"
