@@ -1,14 +1,12 @@
 import { FC } from 'react';
+import Image from 'next/image';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious
+  CarouselNext
 } from '@/components/ui/carousel';
 import { Card } from '@/components/ui/card';
-import Image from 'next/image';
-import { getAssetUrl } from '@/lib/utils';
 import { testimoni } from '@/constants/testimoni';
 
 const Testimonial: FC = () => {
