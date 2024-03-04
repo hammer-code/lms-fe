@@ -2,15 +2,18 @@
 import * as React from 'react';
 
 import { cn } from '@/lib/utils';
+import { Eye, EyeOff } from 'lucide-react';
 
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   suffix?: React.ReactNode;
+  colorIcon?: string;
 }
 
-const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ suffix, className, type, ...props }, ref) => {
+const InputPassword = React.forwardRef<HTMLInputElement, InputProps>(
+  ({ suffix, className, type, colorIcon, ...props }, ref) => {
     const [isFocused, setIsFocused] = React.useState(false);
+    const [typePass, setTypePass] = React.useState(type);
     return (
       <div
         className={cn(
@@ -20,17 +23,25 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       >
         {suffix}
         <input
-          type={type}
+          type={typePass}
           className={cn('w-full outline-none', className)}
           ref={ref}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
           {...props}
         />
+        {typePass === 'password' ? (
+          <Eye className={colorIcon} onClick={() => setTypePass('text')} />
+        ) : (
+          <EyeOff
+            className={colorIcon}
+            onClick={() => setTypePass('password')}
+          />
+        )}
       </div>
     );
   }
 );
-Input.displayName = 'Input';
+InputPassword.displayName = 'InputPassword';
 
-export { Input };
+export { InputPassword };

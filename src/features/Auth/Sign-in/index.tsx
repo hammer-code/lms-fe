@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import loginBg from '@/assets/auth/login-astronout.svg';
+import { LockKeyhole, Mail } from 'lucide-react';
+import { InputPassword } from '@/components/ui/input-password';
 
 const SignIn = () => {
   return (
@@ -22,11 +24,14 @@ const SignIn = () => {
                 type="email"
                 placeholder="Masukkan Email"
                 className="border-[#828282]"
+                suffix={<Mail className="text-[#828282]" />}
               />
-              <Input
+              <InputPassword
                 type="password"
                 placeholder="Masukkan Password"
                 className="border-[#828282]"
+                colorIcon="text-[#828282]"
+                suffix={<LockKeyhole className="text-[#828282]" />}
               />
             </div>
             <div className="flex flex-col gap-2">
