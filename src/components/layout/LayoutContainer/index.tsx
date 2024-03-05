@@ -6,7 +6,8 @@ import { usePathname } from 'next/navigation';
 
 export const LayoutContainer = ({ children }: { children: ReactNode }) => {
   const router = usePathname();
-  const isIndexPage = router === '/';
+  const pathName = ['/', '/sign-in', '/sign-up'];
+  const isIndexPage = pathName.includes(router);
 
   return (
     <SidebarProvider>
