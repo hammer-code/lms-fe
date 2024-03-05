@@ -6,6 +6,7 @@ import LearnMore from './components/LearnMoreButton';
 import OurClass from './components/OurClass';
 import OurClassText from './components/OurClassText';
 import Hero from './sections/Hero';
+import Testimonial from './sections/Testimonial';
 
 const Main = () => {
   return (
@@ -16,6 +17,7 @@ const Main = () => {
       <OurClassText />
       <OurClass />
       <LearnMore />
+      <Testimonial />
       <AccordionFAQ />
       <Footer />
     </div>

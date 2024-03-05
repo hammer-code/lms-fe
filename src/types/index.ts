@@ -56,3 +56,10 @@ export interface FAQType {
   question?: string;
   answer?: string;
 }
+
+export interface TestimoniType {
+  id: number;
+  name?: string;
+  img?: string;
+  comment?: string;
+}
