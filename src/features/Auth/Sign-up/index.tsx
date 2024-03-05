@@ -28,26 +28,26 @@ const SignUp = () => {
             <div className="flex flex-col gap-4">
               <Input
                 type="text"
-                placeholder="Masukkan Username"
+                placeholder="Enter Username"
                 className="border-[#828282]"
                 suffix={<CircleUser className="text-[#828282]" />}
               />
               <Input
                 type="email"
-                placeholder="Masukkan Email"
+                placeholder="Enter Email"
                 className="border-[#828282]"
                 suffix={<Mail className="text-[#828282]" />}
               />
               <InputPassword
                 type="password"
-                placeholder="Masukkan Password"
+                placeholder="Enter Password"
                 className="border-[#828282]"
                 colorIcon="text-[#828282]"
                 suffix={<Lock className="text-[#828282]" />}
               />
               <InputPassword
                 type="password"
-                placeholder="Konfirmasi Password"
+                placeholder="Confirm Password"
                 className="border-[#828282]"
                 colorIcon="text-[#828282]"
                 suffix={<LockKeyhole className="text-[#828282]" />}

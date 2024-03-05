@@ -22,13 +22,13 @@ const SignIn = () => {
             <div className="flex flex-col gap-4">
               <Input
                 type="email"
-                placeholder="Masukkan Email"
+                placeholder="Enter Email"
                 className="border-[#828282]"
                 suffix={<Mail className="text-[#828282]" />}
               />
               <InputPassword
                 type="password"
-                placeholder="Masukkan Password"
+                placeholder="Enter Password"
                 className="border-[#828282]"
                 colorIcon="text-[#828282]"
                 suffix={<LockKeyhole className="text-[#828282]" />}
