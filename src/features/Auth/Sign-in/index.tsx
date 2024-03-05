@@ -2,14 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import loginBg from '@/assets/auth/login-astronout.svg';
+import signInBg from '@/assets/auth/signin-astronout.svg';
 import { LockKeyhole, Mail } from 'lucide-react';
 import { InputPassword } from '@/components/ui/input-password';
 
 const SignIn = () => {
   return (
     <div className="w-screen h-screen p-4">
-      <div className="flex min-h-full relative overflow-hidden justify-center">
+      <div className="flex min-h-full relative overflow-hidden justify-center items-center">
         <div className="flex flex-col items-center justify-center lg:w-4/12">
           <div className="flex flex-col gap-6 mx-auto lg:w-96">
             <div className="flex flex-col gap-2">
@@ -38,7 +38,7 @@ const SignIn = () => {
               <Button className="text-white rounded-2xl">Sign In</Button>
               <p className="text-xs text-center">
                 Don&apos;t have an account yet?{' '}
-                <Link href="" className="text-hmc-base">
+                <Link href="/sign-up" className="text-hmc-base">
                   Sign Up
                 </Link>
               </p>
@@ -47,8 +47,8 @@ const SignIn = () => {
         </div>
         <Image
           priority
-          src={loginBg}
-          alt="Login Background"
+          src={signInBg}
+          alt="Sign In Background"
           className="hidden lg:block w-4/12 h-4/12"
         />
       </div>
