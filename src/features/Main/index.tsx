@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import LearnMore from './components/LearnMoreButton';
 import OurClass from './components/OurClass';
 import OurClassText from './components/OurClassText';
+import About from './sections/About';
 import Hero from './sections/Hero';
 
 const Main = () => {
@@ -13,6 +14,7 @@ const Main = () => {
       <Navbar />
       <Hero />
       <CardPartners />
+      <About />
       <OurClassText />
       <OurClass />
       <LearnMore />
