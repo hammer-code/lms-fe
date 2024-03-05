@@ -7,7 +7,7 @@ const About: FC = () => {
     <div className="flex flex-col-reverse md:flex-row justify-center lg:justify-between md:mx-[69px] mx-8 md:gap-8 my-28 items-center">
       <div>
         <Image
-          src={getAssetUrl('/imgabout/card.svg')}
+          src={getAssetUrl('/img-about/card.svg')}
           alt="card"
           width={700}
           height={700}
