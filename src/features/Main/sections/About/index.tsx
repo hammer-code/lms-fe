@@ -4,7 +4,7 @@ import { getAssetUrl } from '@/lib/utils';
 
 const About: FC = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row justify-center lg:justify-between md:mx-[69px] mx-8 md:gap-8 my-28 items-center">
+    <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row justify-center lg:justify-between items-center">
       <div>
         <Image
           src={getAssetUrl('/img-about/card.svg')}
