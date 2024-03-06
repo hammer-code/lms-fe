@@ -13,7 +13,7 @@ import { FC } from 'react';
 
 const OurClass: FC = () => {
   return (
-    <div className="mx-16 md:mx-8 lg:mx-24 my-12">
+    <div className="container mx-auto px-4  my-12">
       <Carousel className="">
         <CarouselContent>
           {imagecarousel.map(image => (

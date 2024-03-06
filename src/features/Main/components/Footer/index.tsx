@@ -3,7 +3,7 @@ import { FC } from 'react';
 const Footer: FC = () => {
   return (
     <div className="bg-[#0F3665] flex flex-wrap justify-between text-white md:px-20 px-8 py-8 text-xs md:text-[15px] md:flex-row flex-col-reverse gap-6 md:gap-4 ">
-      <div className="flex gap-2 items-center text-left">
+      <div className="container mx-auto px-4 flex gap-2 items-center text-left">
         <span>Copyright &copy; 2024</span>
         <span className="text-primary-blue ">HammerCode</span>
       </div>
