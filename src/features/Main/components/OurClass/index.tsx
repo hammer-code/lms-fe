@@ -17,7 +17,7 @@ const OurClass: FC = () => {
       <Carousel className="">
         <CarouselContent>
           {imagecarousel.map(image => (
-            <CarouselItem  
+            <CarouselItem
               key={image.id}
               className="flex gap-2 flex-wrap justify-center pl-1 sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
             >
