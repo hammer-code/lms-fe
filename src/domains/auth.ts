@@ -35,7 +35,9 @@ export const RegisterSchema = z
       .min(1, { message: MESSAGE.USERNAME }),
     email: EmailSchema,
     password: PasswordSchema,
-    confirm: PasswordSchema
+    confirm: z
+      .string({ required_error: MESSAGE.CONFIRM })
+      .min(1, { message: MESSAGE.CONFIRM })
   })
   .refine(data => data.password === data.confirm, {
     message: "Passwords don't match",
