@@ -23,9 +23,7 @@ const SignIn = () => {
     resolver: zodResolver(LoginSchema)
   });
 
-  const onSubmit = (values: LoginType) => {
-    console.log(values);
-  };
+  const onSubmit = (values: LoginType) => {};
 
   return (
     <div className="w-screen h-screen p-4">

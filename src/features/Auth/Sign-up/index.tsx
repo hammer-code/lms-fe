@@ -23,9 +23,7 @@ const SignUp = () => {
     resolver: zodResolver(RegisterSchema)
   });
 
-  const onSubmit = (values: RegisterType) => {
-    console.log(values);
-  };
+  const onSubmit = (values: RegisterType) => {};
   return (
     <div className="w-screen h-screen p-4">
       <div className="flex min-h-full relative overflow-hidden justify-center items-center">
