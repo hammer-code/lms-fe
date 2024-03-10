@@ -1,6 +1,4 @@
 import React, { FC } from 'react';
-import { getAssetUrl } from '@/lib/utils';
-import Image from 'next/image';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 const LearnMore: FC = () => {
