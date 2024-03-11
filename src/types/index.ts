@@ -63,3 +63,7 @@ export interface TestimoniType {
   img?: string;
   comment?: string;
 }
+
+export interface LearnMoreType {
+  icon: ComponentType<IconProps>;
+}
