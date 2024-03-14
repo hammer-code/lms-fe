@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { ThemeProvider } from '@/components/common/ThemeProvider';
+import { ThemeProvider } from '@/components/provider/ThemeProvider';
 import DashboardNav from '../DashboardNav';
 import DashboardSide from '../DashboardSide';
 

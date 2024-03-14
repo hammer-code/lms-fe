@@ -1,7 +1,9 @@
 import { LayoutContainer } from '@/components/layout/LayoutContainer';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
+import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
+import TanstackProvider from '@/components/provider/TanstackProvider';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -22,7 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className} suppressHydrationWarning={true}>
-        <LayoutContainer>{children}</LayoutContainer>
+        <LayoutContainer>
+          <TanstackProvider>{children}</TanstackProvider>
+        </LayoutContainer>
+        <Toaster />
       </body>
     </html>
   );

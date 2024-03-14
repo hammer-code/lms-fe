@@ -17,13 +17,17 @@ import {
   FormMessage
 } from '@/components/ui/form';
 import { RegisterSchema, RegisterType } from '@/domains/auth';
+import { useAuthRegister } from './hooks';
 
 const SignUp = () => {
+  const { mutate } = useAuthRegister();
   const form = useForm<RegisterType>({
     resolver: zodResolver(RegisterSchema)
   });
 
-  const onSubmit = (values: RegisterType) => {};
+  const onSubmit = (values: RegisterType) => {
+    mutate(values);
+  };
   return (
     <div className="w-screen h-screen p-4">
       <div className="flex min-h-full relative overflow-hidden justify-center items-center">
@@ -101,7 +105,7 @@ const SignUp = () => {
                 />
                 <FormField
                   control={form.control}
-                  name="confirm"
+                  name="confirm_password"
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
