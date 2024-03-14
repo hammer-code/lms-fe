@@ -1,4 +1,9 @@
-import axios, { AxiosInstance } from 'axios';
+import axios, {
+  AxiosError,
+  AxiosInstance,
+  AxiosResponse,
+  InternalAxiosRequestConfig
+} from 'axios';
 import { BASE_URL } from '@/constants/configs';
 import { getToken } from '@/lib/storage';
 
@@ -11,11 +16,20 @@ export const fetcher: AxiosInstance = axios.create({
 });
 
 fetcher.interceptors.request.use(
-  config => {
+  (config: InternalAxiosRequestConfig) => {
     config.headers['Authorization'] = getToken();
     return config;
   },
-  error => {
+  (error: AxiosError) => {
     return Promise.reject(error);
+  }
+);
+
+fetcher.interceptors.response.use(
+  (response: AxiosResponse) => {
+    return response;
+  },
+  (error: AxiosError) => {
+    return Promise.reject(error?.response?.data);
   }
 );

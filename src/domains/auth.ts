@@ -35,13 +35,25 @@ export const RegisterSchema = z
       .min(1, { message: MESSAGE.USERNAME }),
     email: EmailSchema,
     password: PasswordSchema,
-    confirm: z
+    confirm_password: z
       .string({ required_error: MESSAGE.CONFIRM })
       .min(1, { message: MESSAGE.CONFIRM })
   })
-  .refine(data => data.password === data.confirm, {
+  .refine(data => data.password === data.confirm_password, {
     message: "Passwords don't match",
     path: ['confirm']
   });
 
 export type RegisterType = z.infer<typeof RegisterSchema>;
+
+const RegisterResSchema = z.object({
+  id: z.number(),
+  username: z.string(),
+  email: z.string(),
+  password: z.string(),
+  role: z.string(),
+  created_at: z.date(),
+  updated_at: z.date()
+});
+
+export type RegisterResType = z.infer<typeof RegisterResSchema>;
