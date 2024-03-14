@@ -17,13 +17,18 @@ import {
   FormItem,
   FormMessage
 } from '@/components/ui/form';
+import { useAuthLogin } from './hooks';
 
 const SignIn = () => {
+  const { mutate } = useAuthLogin();
   const form = useForm<LoginType>({
-    resolver: zodResolver(LoginSchema)
+    resolver: zodResolver(LoginSchema),
+    defaultValues: { email: '', password: '' }
   });
 
-  const onSubmit = (values: LoginType) => {};
+  const onSubmit = (values: LoginType) => {
+    mutate(values);
+  };
 
   return (
     <div className="w-screen h-screen p-4">
