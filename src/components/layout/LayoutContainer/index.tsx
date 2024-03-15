@@ -18,10 +18,10 @@ export const LayoutContainer = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     if (!token) {
-      showToast({ title: "You must be login!"});
+      showToast({ title: 'You must be login!' });
       setTimeout(() => {
         router.push('/sign-in');
-      }, 3000)
+      }, 3000);
     }
   }, [token]);
 

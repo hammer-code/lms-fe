@@ -32,16 +32,16 @@ export const useAuthLogin = () => {
   const router = useRouter();
   return useMutation({
     mutationFn: async (values: LoginType) => await AuthService.login(values),
-    onSuccess: () => {
+    onSuccess: data => {
       router.push('/');
       showToast({
-        title: 'Login Successful',
+        title: data?.message || 'Login Successful',
         description: 'Welcome to hmc learn!'
       });
     },
     onError: (err: AxiosError) => {
       showToast({
-        title: 'Login Failed',
+        title: 'Login Failed!',
         description: err?.message || 'Something went wrong!'
       });
     }
