@@ -11,7 +11,7 @@ import Testimonial from './sections/Testimonial';
 
 const Main = () => {
   return (
-    <div>
+    <div id="home">
       <Navbar />
       <Hero />
       <CardPartners />

@@ -11,7 +11,10 @@ import { testimoni } from '@/constants/testimoni';
 
 const Testimonial: FC = () => {
   return (
-    <div className="container mx-auto px-4 my-6 flex flex-col items-center justify-center gap-8 md:flex-row md:justify-between md:items-start">
+    <div
+      id="testimonial"
+      className="container mx-auto px-4 my-6 flex flex-col items-center justify-center gap-8 md:flex-row md:justify-between md:items-start"
+    >
       <div className="">
         <div className="flex items-center gap-4 md:gap-6 mb-4 md:mb-8">
           <div className="w-8 md:w-16 h-1 bg-[#0F3665]"></div>
