@@ -5,7 +5,7 @@ import ThemeToggle from '../ThemeToggle';
 
 const DashboardNav = () => {
   return (
-    <div className="absolute top-0 right-0 left-0 border-b bg-background/95 backdrop-blur">
+    <div className="absolute top-0 right-0 left-0 border-b bg-background/95 backdrop-blur z-40">
       <nav className="flex h-16 items-center justify-between px-8">
         <div className="hidden md:block">
           <HmcLogo type="dashboard" />

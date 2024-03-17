@@ -4,6 +4,7 @@ import { Poppins } from 'next/font/google';
 import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 import TanstackProvider from '@/components/provider/TanstackProvider';
+import { HydrateProvider } from '@/components/provider/HydrateProvider';
 
 const poppins = Poppins({
   subsets: ['latin'],
