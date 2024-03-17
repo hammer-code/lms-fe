@@ -57,3 +57,7 @@ const RegisterResSchema = z.object({
 });
 
 export type RegisterResType = z.infer<typeof RegisterResSchema>;
+
+const LoginResSchema = z.string();
+
+export type LoginResType = z.infer<typeof LoginResSchema>;

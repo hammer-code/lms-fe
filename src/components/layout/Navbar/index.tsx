@@ -69,7 +69,7 @@ const Navbar: FC = () => {
               size="sm"
               className="rounded-full ml-4 px-6 bg-hmc-base hover:bg-hmc-hover-base text-xs"
             >
-              <Link href="">Sign Up</Link>
+              <Link href="/sign-up">Sign Up</Link>
             </Button>
           </div>
         </div>
