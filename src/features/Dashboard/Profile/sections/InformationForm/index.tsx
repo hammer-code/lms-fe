@@ -79,7 +79,7 @@ const InformationForm = ({ tabs }: { tabs: string }) => {
             <div>
               <Label htmlFor="github">Github</Label>
               <Input
-                suffix={<GitHubLogoIcon />}
+                suffix={<GitHubLogoIcon width="24" height="24" />}
                 type="text"
                 id="github"
                 placeholder="Enter your github account"
@@ -88,7 +88,7 @@ const InformationForm = ({ tabs }: { tabs: string }) => {
             <div>
               <Label htmlFor="linkedin">Linkedin</Label>
               <Input
-                suffix={<LinkedInLogoIcon />}
+                suffix={<LinkedInLogoIcon width="24" height="24" />}
                 type="text"
                 id="linkedin"
                 placeholder="Enter your linkedin profile URL"
