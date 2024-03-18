@@ -36,13 +36,15 @@ export const useAuthLogin = () => {
       router.push('/');
       showToast({
         title: data?.message || 'Login Successful',
-        description: 'Welcome to hmc learn!'
+        description: 'Welcome to hmc learn!',
+        type: 'success'
       });
     },
     onError: (err: AxiosError) => {
       showToast({
         title: 'Login Failed!',
-        description: err?.message || 'Something went wrong!'
+        description: err?.message || 'Something went wrong!',
+        type: 'error'
       });
     }
   });
