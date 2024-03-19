@@ -10,23 +10,28 @@ import {
 export const MainMenu: MainMenuType[] = [
   {
     id: 1,
-    title: 'Home'
+    title: 'Home',
+    path: '/#home'
   },
   {
     id: 2,
-    title: 'About'
+    title: 'About',
+    path: '/#about'
   },
   {
     id: 3,
-    title: 'Learning Path'
+    title: 'Our Class',
+    path: '/#our-class'
   },
   {
     id: 4,
-    title: 'Testimonial'
+    title: 'Testimonial',
+    path: '/#testimonial'
   },
   {
     id: 5,
-    title: 'FAQ'
+    title: 'FAQ',
+    path: '/#faq'
   }
 ];
 
