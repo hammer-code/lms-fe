@@ -33,16 +33,16 @@ const OurClass: FC = () => {
       <div className="w-full px-12">
         <Carousel>
           <CarouselContent>
-            {imagecarousel.map(image => (
+            {imagecarousel.map(({ id, src, alt }) => (
               <CarouselItem
-                key={image.id}
+                key={id}
                 className="flex gap-2 flex-wrap justify-center sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
               >
                 <Card className="size-full shadow-xl">
                   <Image
-                    src={getAssetUrl(`/img-carousel/${image.src}`)}
+                    src={getAssetUrl(`/img-carousel/${src}`)}
                     width={0}
-                    alt={image.alt ?? ''}
+                    alt={alt ?? ''}
                     height={0}
                     sizes="100vw"
                     className="w-full h-auto object-cover rounded-t-md"
@@ -57,16 +57,16 @@ const OurClass: FC = () => {
                   </div>
                   <div className="mx-4 flex">
                     <div>
-                      {logocarousel.map(logo => (
-                        <div key={logo.id} className="flex">
+                      {logocarousel.map(({ id, src, alt, text }) => (
+                        <div key={id} className="flex">
                           <Image
-                            src={getAssetUrl(`/logo-carousel/${logo.src}`)}
-                            alt={`${logo.alt}`}
+                            src={getAssetUrl(`/logo-carousel/${src}`)}
+                            alt={`${alt}`}
                             width={14}
                             height={16}
                             className="mt-2"
                           />
-                          <h1 className="text-[13px] mt-2 ml-2">{logo.text}</h1>
+                          <h1 className="text-[13px] mt-2 ml-2">{text}</h1>
                         </div>
                       ))}
                     </div>
