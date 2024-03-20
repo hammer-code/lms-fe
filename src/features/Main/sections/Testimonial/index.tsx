@@ -13,7 +13,7 @@ const Testimonial: FC = () => {
   return (
     <div
       id="testimonial"
-      className="container h-screen mx-auto px-4 flex flex-col items-center justify-center gap-8 md:flex-row md:justify-between"
+      className="container min-h-screen mx-auto px-4 flex flex-col items-center justify-center gap-8 md:flex-row md:justify-between"
     >
       <div>
         <div className="flex items-center gap-4 md:gap-6 mb-4 md:mb-8">

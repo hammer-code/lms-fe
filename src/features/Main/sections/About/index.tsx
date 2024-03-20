@@ -6,7 +6,7 @@ const About: FC = () => {
   return (
     <div
       id="about"
-      className="container h-screen mx-auto px-4 flex flex-col-reverse md:flex-row justify-center lg:justify-between items-center"
+      className="container min-h-screen mx-auto px-4 flex flex-col-reverse md:flex-row justify-center lg:justify-between items-center"
     >
       <div>
         <Image
