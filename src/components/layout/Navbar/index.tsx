@@ -53,7 +53,7 @@ const Navbar: FC = () => {
                   <DropdownMenuItem key={item.id}>
                     <Link
                       href={item.path}
-                      className="relative block after:block after:content-[''] after:absolute after:h-[3px] after:bg-hmc-base after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left after:rounded-full"
+                      className="relative block after:block after:content-[''] after:absolute after:h-[3px] after:bg-hmc-base after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left after:rounded-full w-full"
                     >
                       {item.title}
                     </Link>
