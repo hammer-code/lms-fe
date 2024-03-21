@@ -53,7 +53,6 @@ const SignIn = () => {
                         <Input
                           type="email"
                           placeholder="Enter Email"
-                          className="border-[#828282]"
                           suffix={<Mail className="text-[#828282]" />}
                           {...field}
                         />
@@ -71,7 +70,6 @@ const SignIn = () => {
                         <InputPassword
                           type="password"
                           placeholder="Enter Password"
-                          className="border-[#828282]"
                           colorIcon="text-[#828282]"
                           suffix={<LockKeyhole className="text-[#828282]" />}
                           {...field}

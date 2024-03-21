@@ -57,7 +57,6 @@ const SignUp = () => {
                         <Input
                           type="text"
                           placeholder="Enter Username"
-                          className="border-[#828282]"
                           suffix={<CircleUser className="text-[#828282]" />}
                           {...field}
                         />
@@ -75,7 +74,6 @@ const SignUp = () => {
                         <Input
                           type="email"
                           placeholder="Enter Email"
-                          className="border-[#828282]"
                           suffix={<Mail className="text-[#828282]" />}
                           {...field}
                         />
@@ -93,7 +91,6 @@ const SignUp = () => {
                         <InputPassword
                           type="password"
                           placeholder="Enter Password"
-                          className="border-[#828282]"
                           colorIcon="text-[#828282]"
                           suffix={<Lock className="text-[#828282]" />}
                           {...field}
@@ -112,7 +109,6 @@ const SignUp = () => {
                         <InputPassword
                           type="password"
                           placeholder="Confirm Password"
-                          className="border-[#828282]"
                           colorIcon="text-[#828282]"
                           suffix={<LockKeyhole className="text-[#828282]" />}
                           {...field}
