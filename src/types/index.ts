@@ -64,3 +64,33 @@ export interface TestimoniType {
   img?: string;
   comment?: string;
 }
+
+export interface DataDashboardTotal {
+  id?: number;
+  title?: string;
+  count?: number;
+}
+
+export interface DataRunningCourse {
+  id?: number;
+  course_name?: string;
+  mentor?: string;
+  learning_path?: string;
+  progress?: number;
+}
+
+export interface DataInstructor {
+  id?: number | string;
+  name?: string;
+  email?: string;
+  avatar_url?: any;
+}
+
+export interface PathColor {
+  [key: string]: {
+    backgroundColor?: string;
+    textColor?: string;
+    borderColor?: string;
+    label?: string;
+  };
+}
