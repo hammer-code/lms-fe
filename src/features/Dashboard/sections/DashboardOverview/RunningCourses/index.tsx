@@ -78,7 +78,7 @@ const RunningCourses = () => {
                           {progress}%
                         </span>
                         <Progress
-                          value={50}
+                          value={progress}
                           max={100}
                           indicatorColor={renderProgressColorPath(
                             learning_path
