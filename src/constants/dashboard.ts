@@ -9,7 +9,7 @@ import avatarUrl from '@/assets/img/avatar.png';
 export const dataDashboardTotals: DataDashboardTotal[] = [
   {
     id: 1,
-    title: 'Total Course',
+    title: 'Total Courses',
     count: 10
   },
   {

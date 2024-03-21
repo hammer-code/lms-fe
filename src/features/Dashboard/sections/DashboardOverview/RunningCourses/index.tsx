@@ -4,7 +4,7 @@ import { Progress } from '@/components/ui/progress';
 import { dataRunningCourses, pathColors } from '@/constants/dashboard';
 
 const RunningCourses = () => {
-  const renderPathColorTag = (path: string | undefined) => {
+  const renderTagColorPath = (path: string | undefined) => {
     const { backgroundColor, borderColor, textColor, label } =
       pathColors[path ?? ''] || pathColors.UNKNOWN;
 
@@ -33,7 +33,7 @@ const RunningCourses = () => {
       <Card>
         <CardHeader>
           <h2 className="xl:text-lg font-medium text-hmc-blue-800 dark:text-white">
-            Running Course
+            Running Courses
           </h2>
         </CardHeader>
         <CardContent>
@@ -66,7 +66,7 @@ const RunningCourses = () => {
                       <h3 className="text-hmc-grey-500 dark:text-white text-xs font-medium">
                         Learning Path
                       </h3>
-                      {renderPathColorTag(learning_path)}
+                      {renderTagColorPath(learning_path)}
                     </div>
 
                     <div className="flex flex-col gap-2 basis-[30%]">
