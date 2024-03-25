@@ -4,6 +4,7 @@ import { Poppins } from 'next/font/google';
 import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 import TanstackProvider from '@/components/provider/TanstackProvider';
+import { HydrateProvider } from '@/components/provider/HydrateProvider';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -22,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth" lang="en">
       <body className={poppins.className} suppressHydrationWarning={true}>
         <LayoutContainer>
           <TanstackProvider>{children}</TanstackProvider>

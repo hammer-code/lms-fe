@@ -5,6 +5,7 @@ import { IconProps } from '@radix-ui/react-icons/dist/types';
 export interface MainMenuType {
   id?: number;
   title?: string;
+  path: string;
 }
 
 export interface LogoPartnersType {
@@ -62,8 +63,4 @@ export interface TestimoniType {
   name?: string;
   img?: string;
   comment?: string;
-}
-
-export interface LearnMoreType {
-  icon: ComponentType<IconProps>;
 }

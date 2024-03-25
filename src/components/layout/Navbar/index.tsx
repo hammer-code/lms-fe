@@ -32,7 +32,7 @@ const Navbar: FC = () => {
               {MainMenu.map(item => (
                 <li key={item.id}>
                   <Link
-                    href=""
+                    href={item.path}
                     className="relative block after:block after:content-[''] after:absolute after:h-[3px] after:bg-hmc-base after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:rounded-full"
                   >
                     {item.title}
@@ -52,8 +52,8 @@ const Navbar: FC = () => {
                 {MainMenu.map(item => (
                   <DropdownMenuItem key={item.id}>
                     <Link
-                      href=""
-                      className="relative block after:block after:content-[''] after:absolute after:h-[3px] after:bg-hmc-base after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left after:rounded-full"
+                      href={item.path}
+                      className="relative block after:block after:content-[''] after:absolute after:h-[3px] after:bg-hmc-base after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left after:rounded-full w-full"
                     >
                       {item.title}
                     </Link>
