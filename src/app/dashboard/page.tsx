@@ -1,11 +1,12 @@
-import { NextPage } from 'next';
+import DashboardPage from '@/features/Dashboard';
+import { Metadata, NextPage } from 'next';
 import { FC } from 'react';
 
-const Dashboard: FC<NextPage> = () => {
-  return (
-    <h1 className="md:text-2xl text-xl durtion-200 font-semibold">
-      Dashboard Page
-    </h1>
-  );
+export const metadata: Metadata = {
+  title: 'Dashboard Page | HMC Learn'
+};
+
+const Dashboard: FC = () => {
+  return <DashboardPage />;
 };
 export default Dashboard;
