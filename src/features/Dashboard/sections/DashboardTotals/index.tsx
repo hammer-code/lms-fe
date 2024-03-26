@@ -18,7 +18,7 @@ const DashboardTotals = () => {
       {dataDashboardTotals.map(({ id, title, count }) => (
         <Card
           key={id}
-          className="w-full border border-hmc-grey-100 shadow-[0px_0px_20px_0px_#F1F5F9] dark:shadow-none"
+          className="w-full border shadow-[0px_0px_20px_0px_#F1F5F9] dark:shadow-none"
         >
           <CardHeader>
             <div className="flex items-center justify-between">

@@ -15,7 +15,7 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({ studentName }) => {
   return (
     <div className="flex flex-col gap-5">
       <h1 className="md:text-2xl text-xl font-medium">Dashboard Page</h1>
-      <div className="relative w-full md:h-[181px] h-40 border border-hmc-grey-100 shadow-[0px_0px_20px_0px_#F1F5F9] rounded-[20px] dark:shadow-none">
+      <div className="relative w-full md:h-[181px] h-40 border shadow-[0px_0px_20px_0px_#F1F5F9] rounded-[20px] dark:shadow-none">
         <Image
           src={getAssetUrl(
             theme === 'dark'

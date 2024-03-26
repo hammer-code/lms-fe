@@ -42,7 +42,7 @@ const RunningCourses = () => {
               ({ id, course_name, mentor, learning_path, progress = 0 }) => (
                 <div
                   key={id}
-                  className="px-5 py-3 border border-hmc-grey-100 hover:shadow-[0px_12px_10px_0px_#F1F5F9] rounded-xl cursor-pointer transition-all duration-150 ease-out dark:hover:shadow-[0px_12px_10px_0px_#161d25]"
+                  className="px-5 py-3 border hover:shadow-[0px_12px_10px_0px_#F1F5F9] rounded-xl cursor-pointer transition-all duration-150 ease-out dark:hover:shadow-[0px_12px_10px_0px_#161d25]"
                 >
                   <div className="flex xl:flex-row flex-col xl:items-center justify-between xl:gap-4 gap-6">
                     <div className="flex xl:flex-row flex-col xl:items-center gap-4 basis-[20%]">
