@@ -20,6 +20,27 @@ const config = {
     extend: {
       colors: {
         'primary-blue': '#00CCFF',
+        'hmc-grey': {
+          100: '#F1F5F9',
+          300: '#71717A',
+          400: '#B5B5B5',
+          500: '#828282',
+          600: '#9E9E9E'
+        },
+        'hmc-green': {
+          100: '#EFFCF8',
+          600: '#12BCB1'
+        },
+        'hmc-purple': {
+          100: '#E2D5FF',
+          600: '#702DFF'
+        },
+        'hmc-blue': {
+          100: '#DFF4FE',
+          600: '#5FCAF8',
+          700: '#144582',
+          800: '#0F3665'
+        },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
