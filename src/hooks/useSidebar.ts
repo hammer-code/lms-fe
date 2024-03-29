@@ -1,11 +1,9 @@
-import { SidebarContext } from '@/providers/sidebarProvider';
-import { SidebarContextProps } from '@/types';
-import { useContext } from 'react';
+import { create } from 'zustand';
+import { SidebarStore } from './types/SidebarType';
 
-export const useSidebar = (): SidebarContextProps => {
-  const context = useContext(SidebarContext);
-  if (!context) {
-    throw new Error('useSidebar must be used within a SidebarProvider');
-  }
-  return context;
-};
+const useSidebar = create<SidebarStore>(set => ({
+  isOpen: false,
+  toggleSidebar: () => set(state => ({ isOpen: !state.isOpen }))
+}));
+
+export default useSidebar;
