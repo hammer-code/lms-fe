@@ -1,22 +1,10 @@
+import LabelPath from '@/components/common/LabelPath';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 import { Progress } from '@/components/ui/progress';
-import { dataRunningCourses, pathColors } from '@/constants/dashboard';
+import { dataRunningCourses } from '@/constants/dashboard';
 
 const RunningCourses = () => {
-  const renderTagColorPath = (path: string | undefined) => {
-    const { backgroundColor, borderColor, textColor, label } =
-      pathColors[path ?? ''] || pathColors.UNKNOWN;
-
-    return (
-      <div
-        className={`px-3 py-0.5 text-[10px] ${backgroundColor} ${textColor} rounded-2xl flex justify-center ${borderColor ? `border ${borderColor}` : ''}`}
-      >
-        {label}
-      </div>
-    );
-  };
-
   const renderProgressColorPath = (path: string | undefined) => {
     switch (path) {
       case 'FRONTEND':
@@ -66,7 +54,7 @@ const RunningCourses = () => {
                       <h3 className="text-hmc-grey-500 dark:text-white text-xs font-medium">
                         Learning Path
                       </h3>
-                      {renderTagColorPath(learning_path)}
+                      <LabelPath path={learning_path} />
                     </div>
 
                     <div className="flex flex-col gap-2 basis-[30%]">

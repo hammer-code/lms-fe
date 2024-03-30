@@ -1,11 +1,12 @@
 import { FC } from 'react';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+
 import { buttonVariants } from '@/components/ui/button';
 import { DashboardMenu } from '@/constants/menu';
-import { useSidebar } from '@/hooks/useSidebar';
 import { cn } from '@/lib/utils';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { MenuSidebarProps } from '@/types';
+import useSidebar from '@/hooks/useSidebar';
 
 const MenuSide: FC<MenuSidebarProps> = ({ setOpen }) => {
   const { isOpen } = useSidebar();

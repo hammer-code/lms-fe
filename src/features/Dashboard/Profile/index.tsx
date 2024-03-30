@@ -1,7 +1,8 @@
 'use client';
-import HeaderText from '@/components/common/HeaderText';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useState } from 'react';
+
+import HeaderText from '@/components/common/HeaderText';
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import InformationForm from './sections/InformationForm';
 import ProfileForm from './sections/ProfileForm';
 
