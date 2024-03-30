@@ -24,42 +24,39 @@ const CoursePage = () => {
         }
       />
       <section className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2">
-        {DATA_COURSE.map(item => (
-          <Card key={item?.id} className="p-1 min-h-92 rounded-xl">
-            <div
-              className="rounded-t-lg bg-white bg-cover bg-center shadow-lg h-52"
-              style={{
-                backgroundImage: `url('${item?.image}')`
-              }}
-            />
-            <div className="p-3 space-y-3">
-              <LabelPath path={item?.learning_path} />
-              <div>
-                <h1 className="text-lg">{item?.title}</h1>
-                <p className="text-sm line-clamp-2 text-gray-400">
-                  {item?.description}
-                </p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Avatar className="w-11 h-11">
-                  <AvatarFallback>{item?.mentor?.name}</AvatarFallback>
-                  <AvatarImage
-                    src={item?.mentor?.profile}
-                    alt={item?.mentor?.name}
-                  />
-                </Avatar>
+        {DATA_COURSE.map(
+          ({ id, image, learning_path, title, mentor, description }) => (
+            <Card key={id} className="p-1 min-h-92 rounded-xl">
+              <div
+                className="rounded-t-lg bg-white bg-cover bg-center shadow-lg h-52"
+                style={{
+                  backgroundImage: `url('${image}')`
+                }}
+              />
+              <div className="p-3 space-y-3">
+                <LabelPath path={learning_path} />
                 <div>
-                  <h1 className="text-md text-secondary-foreground">
-                    {item?.mentor?.name}
-                  </h1>
-                  <p className="text-xs text-hmc-grey-400">
-                    {item?.mentor?.role}
+                  <h1 className="text-lg">{title}</h1>
+                  <p className="text-sm line-clamp-2 text-gray-400">
+                    {description}
                   </p>
                 </div>
+                <div className="flex items-center gap-3">
+                  <Avatar className="w-11 h-11">
+                    <AvatarFallback>{mentor?.name}</AvatarFallback>
+                    <AvatarImage src={mentor?.profile} alt={mentor?.name} />
+                  </Avatar>
+                  <div>
+                    <h1 className="text-md text-secondary-foreground">
+                      {mentor?.name}
+                    </h1>
+                    <p className="text-xs text-hmc-grey-400">{mentor?.role}</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </Card>
-        ))}
+            </Card>
+          )
+        )}
       </section>
     </div>
   );
