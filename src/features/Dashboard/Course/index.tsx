@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { DATA_COURSE } from './configs';
+import LabelPath from '@/components/common/LabelPath';
 
 const CoursePage = () => {
   return (
@@ -32,6 +33,7 @@ const CoursePage = () => {
               }}
             />
             <div className="p-3 space-y-3">
+              <LabelPath path={item?.learning_path} />
               <div>
                 <h1 className="text-lg">{item?.title}</h1>
                 <p className="text-sm line-clamp-2 text-gray-400">

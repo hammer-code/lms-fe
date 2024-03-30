@@ -121,6 +121,7 @@ export const dataInstructorsList: DataInstructor[] = [
 export const pathColors: PathColor = {
   FRONTEND: {
     backgroundColor: 'bg-hmc-purple-100',
+    borderColor: 'border-hmc-purple-600',
     textColor: 'text-hmc-purple-600',
     label: 'FRONTEND'
   },
@@ -132,6 +133,7 @@ export const pathColors: PathColor = {
   },
   MOBILE: {
     backgroundColor: 'bg-hmc-blue-100',
+    borderColor: 'border-hmc-blue-600',
     textColor: 'text-hmc-blue-600',
     label: 'MOBILE'
   },

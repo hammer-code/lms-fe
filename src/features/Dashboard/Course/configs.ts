@@ -1,9 +1,10 @@
-// Data Temporary
+// Data Temporary, waiting for backend
 export const DATA_COURSE = [
   {
     id: 1,
     image: 'https://www.techfor.id/wp-content/uploads/2019/12/html.png',
     title: 'HTML Course',
+    learning_path: 'FRONTEND',
     description:
       'Kalian akan belajar mengenai apa itu HTML, struktur HTML, dan lain-lain.',
     mentor: {
@@ -18,6 +19,7 @@ export const DATA_COURSE = [
     image:
       'https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg',
     title: 'JavaScript Course',
+    learning_path: 'FRONTEND',
     description:
       'Kalian akan belajar mengenai apa itu JS, Variabel, Loop , dan lain-lain. lorem ipsume adla kwdkwnd kwdnw',
     mentor: {
@@ -32,6 +34,7 @@ export const DATA_COURSE = [
     image:
       'https://bestarion.com/wp-content/uploads/2022/04/what-is-golang-1.png',
     title: 'Golang Course',
+    learning_path: 'BACKEND',
     description:
       'Kalian akan belajar mengenai apa itu Golang, Variabel, Loop , dan lain-lain.',
     mentor: {
@@ -46,6 +49,7 @@ export const DATA_COURSE = [
     image:
       'https://miro.medium.com/v2/resize:fit:1358/1*Od-UrquQOrcwEkpDwwkCiQ.png',
     title: 'CSS Course',
+    learning_path: 'FRONTEND',
     description:
       'Kalian akan belajar mengenai apa itu CSS, Variabel, Loop , dan lain-lain.',
     mentor: {
