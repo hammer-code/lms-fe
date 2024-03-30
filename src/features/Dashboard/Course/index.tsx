@@ -1,12 +1,12 @@
-import { Search, SlidersHorizontal } from 'lucide-react';
+import { Lock, Search, SlidersHorizontal } from 'lucide-react';
 
 import HeaderText from '@/components/common/HeaderText';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { DATA_COURSE } from './configs';
 import LabelPath from '@/components/common/LabelPath';
+import { DATA_COURSE } from '@/constants/dashboard';
 
 const CoursePage = () => {
   return (
@@ -25,8 +25,22 @@ const CoursePage = () => {
       />
       <section className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2">
         {DATA_COURSE.map(
-          ({ id, image, learning_path, title, mentor, description }) => (
-            <Card key={id} className="p-1 min-h-92 rounded-xl">
+          ({
+            id,
+            image,
+            learning_path,
+            title,
+            mentor,
+            description,
+            available
+          }) => (
+            <Card key={id} className="relative p-1 min-h-92 rounded-xl">
+              {available || (
+                <div className="absolute z-10 top-0 left-0 right-0 bottom-0 rounded-xl bg-hmc-grey-400 bg-opacity-60 w-full h-full flex flex-col items-center justify-center gap-2">
+                  <Lock className="w-16 h-16 font-light" />
+                  <p>Not Available</p>
+                </div>
+              )}
               <div
                 className="rounded-t-lg bg-white bg-cover bg-center shadow-lg h-52"
                 style={{
