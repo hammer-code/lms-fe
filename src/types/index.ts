@@ -94,3 +94,17 @@ export interface PathColor {
     label?: string;
   };
 }
+
+export interface CardCourse {
+  id: number;
+  image: string;
+  title: string;
+  learning_path: string;
+  description: string;
+  mentor: {
+    profile: string;
+    name: string;
+    role: string;
+  };
+  available: boolean;
+}

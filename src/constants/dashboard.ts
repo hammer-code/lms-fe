@@ -1,4 +1,5 @@
 import {
+  CardCourse,
   DataDashboardTotal,
   DataInstructor,
   DataRunningCourse,
@@ -121,6 +122,7 @@ export const dataInstructorsList: DataInstructor[] = [
 export const pathColors: PathColor = {
   FRONTEND: {
     backgroundColor: 'bg-hmc-purple-100',
+    borderColor: 'border-hmc-purple-600',
     textColor: 'text-hmc-purple-600',
     label: 'FRONTEND'
   },
@@ -132,6 +134,7 @@ export const pathColors: PathColor = {
   },
   MOBILE: {
     backgroundColor: 'bg-hmc-blue-100',
+    borderColor: 'border-hmc-blue-600',
     textColor: 'text-hmc-blue-600',
     label: 'MOBILE'
   },
@@ -141,3 +144,70 @@ export const pathColors: PathColor = {
     label: 'UNKNOWN'
   }
 };
+
+// Data Temporary, waiting for backend
+export const DATA_COURSE: CardCourse[] = [
+  {
+    id: 1,
+    image: 'https://www.techfor.id/wp-content/uploads/2019/12/html.png',
+    title: 'HTML Course',
+    learning_path: 'FRONTEND',
+    description:
+      'Kalian akan belajar mengenai apa itu HTML, struktur HTML, dan lain-lain.',
+    mentor: {
+      profile:
+        'https://i.pinimg.com/736x/f4/e1/fe/f4e1fe45793230225fc253a1c0ce251f.jpg',
+      name: 'Farhan',
+      role: 'Software Engineer'
+    },
+    available: true
+  },
+  {
+    id: 2,
+    image:
+      'https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg',
+    title: 'JavaScript Course',
+    learning_path: 'FRONTEND',
+    description:
+      'Kalian akan belajar mengenai apa itu JS, Variabel, Loop , dan lain-lain. lorem ipsume adla kwdkwnd kwdnw',
+    mentor: {
+      profile:
+        'https://i.pinimg.com/736x/f4/e1/fe/f4e1fe45793230225fc253a1c0ce251f.jpg',
+      name: 'Putra',
+      role: 'Software Engineer'
+    },
+    available: true
+  },
+  {
+    id: 3,
+    image:
+      'https://bestarion.com/wp-content/uploads/2022/04/what-is-golang-1.png',
+    title: 'Golang Course',
+    learning_path: 'BACKEND',
+    description:
+      'Kalian akan belajar mengenai apa itu Golang, Variabel, Loop , dan lain-lain.',
+    mentor: {
+      profile:
+        'https://i.pinimg.com/736x/f4/e1/fe/f4e1fe45793230225fc253a1c0ce251f.jpg',
+      name: 'Fandi',
+      role: 'Software Engineer'
+    },
+    available: true
+  },
+  {
+    id: 4,
+    image:
+      'https://miro.medium.com/v2/resize:fit:1358/1*Od-UrquQOrcwEkpDwwkCiQ.png',
+    title: 'CSS Course',
+    learning_path: 'FRONTEND',
+    description:
+      'Kalian akan belajar mengenai apa itu CSS, Variabel, Loop , dan lain-lain.',
+    mentor: {
+      profile:
+        'https://i.pinimg.com/736x/f4/e1/fe/f4e1fe45793230225fc253a1c0ce251f.jpg',
+      name: 'Cipta',
+      role: 'Software Engineer'
+    },
+    available: false
+  }
+];
