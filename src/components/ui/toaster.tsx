@@ -52,7 +52,7 @@ export function Toaster() {
           <Toast key={id} {...props} className={color}>
             <div className={`flex border-l-2 gap-2 ${borderColor}`}>
               <div className="flex ml-2">
-                <div>{icon}</div>
+                <div className="flex items-center">{icon}</div>
               </div>
               <div>
                 {title && <ToastTitle>{title}</ToastTitle>}
