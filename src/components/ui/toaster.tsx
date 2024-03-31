@@ -14,22 +14,18 @@ import { AlertCircle, Ban, CheckCircle2, Info } from 'lucide-react';
 const IconToast = {
   info: {
     icon: <Info className="text-primary-blue" />,
-
     borderColor: 'border-primary-blue'
   },
   warning: {
     icon: <AlertCircle className="text-yellow-400" />,
-
     borderColor: 'border-yellow-400'
   },
   error: {
     icon: <Ban className="text-red-500" />,
-
     borderColor: 'border-red-500'
   },
   success: {
     icon: <CheckCircle2 className="text-green-500" />,
-
     borderColor: 'border-green-500'
   }
 };
@@ -49,7 +45,7 @@ export function Toaster() {
       }) {
         const { icon, borderColor } = IconToast[type];
         return (
-          <Toast key={id} {...props} className="text-black rounded-xl">
+          <Toast key={id} {...props} className="rounded-xl">
             <div className={`flex border-l-2 gap-2 ${borderColor}`}>
               <div className="flex ml-2">
                 <div className="flex items-center">{icon}</div>
