@@ -3,6 +3,7 @@ export interface ToastItem {
   title?: string;
   description?: string;
   action?: React.ReactNode;
+  type?: 'info' | 'success' | 'error' | 'warning';
 }
 
 export interface ToastStore {
