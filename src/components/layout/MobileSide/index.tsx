@@ -1,16 +1,17 @@
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import useSidebar from '@/hooks/useSidebar';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import { useTheme } from 'next-themes';
 import { useState } from 'react';
 import MenuSide from '../MenuSide';
 
 const MobileSide = () => {
-  const [open, setOpen] = useState(false);
+  const { isOpen, toggleSidebar } = useSidebar();
   const { theme } = useTheme();
 
   return (
     <>
-      <Sheet open={open} onOpenChange={setOpen} modal={true}>
+      <Sheet open={isOpen} onOpenChange={toggleSidebar} modal={true}>
         <SheetTrigger asChild>
           <div className="flex items-center justify-center">
             <HamburgerMenuIcon
@@ -34,7 +35,7 @@ const MobileSide = () => {
             </h1>
           </div>
           <div className="mt-4">
-            <MenuSide setOpen={setOpen} />
+            <MenuSide setOpen={toggleSidebar} />
           </div>
         </SheetContent>
       </Sheet>
