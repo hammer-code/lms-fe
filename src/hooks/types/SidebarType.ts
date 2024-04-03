@@ -1,4 +1,5 @@
 export interface SidebarStore {
   isOpen: boolean;
-  toggleSidebar: () => void;
+  isOpenResponsive: boolean;
+  toggleSidebar: (check: string) => void;
 }

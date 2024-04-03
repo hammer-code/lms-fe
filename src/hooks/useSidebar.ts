@@ -3,7 +3,13 @@ import { SidebarStore } from './types/SidebarType';
 
 const useSidebar = create<SidebarStore>(set => ({
   isOpen: false,
-  toggleSidebar: () => set(state => ({ isOpen: !state.isOpen }))
+  isOpenResponsive: false,
+  toggleSidebar: check =>
+    set(state => {
+      return check === 'responsive'
+        ? { isOpenResponsive: !state.isOpenResponsive }
+        : { isOpen: !state.isOpen };
+    })
 }));
 
 export default useSidebar;

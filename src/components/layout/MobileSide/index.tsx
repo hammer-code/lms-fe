@@ -6,12 +6,16 @@ import { useState } from 'react';
 import MenuSide from '../MenuSide';
 
 const MobileSide = () => {
-  const { isOpen, toggleSidebar } = useSidebar();
+  const { isOpenResponsive, toggleSidebar } = useSidebar();
   const { theme } = useTheme();
 
   return (
     <>
-      <Sheet open={isOpen} onOpenChange={toggleSidebar} modal={true}>
+      <Sheet
+        open={isOpenResponsive}
+        onOpenChange={() => toggleSidebar('responsive')}
+        modal={true}
+      >
         <SheetTrigger asChild>
           <div className="flex items-center justify-center">
             <HamburgerMenuIcon
@@ -35,7 +39,7 @@ const MobileSide = () => {
             </h1>
           </div>
           <div className="mt-4">
-            <MenuSide setOpen={toggleSidebar} />
+            <MenuSide setOpen={() => toggleSidebar('responsive')} />
           </div>
         </SheetContent>
       </Sheet>
