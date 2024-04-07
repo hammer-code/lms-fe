@@ -9,7 +9,7 @@ import { MenuSidebarProps } from '@/types';
 import useSidebar from '@/hooks/useSidebar';
 
 const MenuSide: FC<MenuSidebarProps> = ({ setOpen }) => {
-  const { isOpen } = useSidebar();
+  const { isOpenResponsive, isOpen } = useSidebar();
   const path = usePathname();
   return (
     <div className="px-2 space-y-2 w-full">
@@ -32,7 +32,7 @@ const MenuSide: FC<MenuSidebarProps> = ({ setOpen }) => {
           <p
             className={cn(
               `transition-all duration-200`,
-              isOpen ? 'opacity-1' : 'opacity-0'
+              isOpenResponsive || isOpen ? 'opacity-1' : 'opacity-0'
             )}
           >
             {item?.title}
