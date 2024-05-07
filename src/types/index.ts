@@ -60,9 +60,7 @@ export interface FAQType {
 
 export interface TestimoniType {
   id: number;
-  name?: string;
-  img?: string;
-  comment?: string;
+  desc: string;
 }
 
 export interface DataDashboardTotal {
