@@ -1,18 +1,52 @@
-import { getAssetUrl } from '@/lib/utils';
 import { TestimoniType } from '@/types';
 
-export const testimoni: TestimoniType[] = [
+export const Testimoni: TestimoniType[] = [
   {
     id: 1,
-    name: 'Abdul Rojak',
-    img: getAssetUrl('/img/person.jpg'),
-    comment: `Thank you so much for your help. It\'s exactly what I\'ve been looking for. You won\'t regret it. It really saves me time and effort.`
+    desc: 'Back-end Developer'
   },
   {
     id: 2,
-    name: 'Reina Rey',
-    img: getAssetUrl('/img/person2.jpg'),
-    comment: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    `
+    desc: 'Front-end Developer'
+  },
+  {
+    id: 3,
+    desc: 'Back-end Developer'
+  },
+  {
+    id: 4,
+    desc: 'Front-end Developer'
+  },
+  {
+    id: 5,
+    desc: 'Back-end Developer'
+  },
+  {
+    id: 6,
+    desc: 'Front-end Developer'
+  },
+  {
+    id: 7,
+    desc: 'Back-end Developer'
+  },
+  {
+    id: 8,
+    desc: 'Front-end Developer'
+  },
+  {
+    id: 9,
+    desc: 'Back-end Developer'
+  },
+  {
+    id: 10,
+    desc: 'Front-end Developer'
+  },
+  {
+    id: 11,
+    desc: 'Back-end Developer'
+  },
+  {
+    id: 12,
+    desc: 'Front-end Developer'
   }
 ];
