@@ -1,6 +1,8 @@
 import { FC } from 'react';
 import Image from 'next/image';
 import { getAssetUrl } from '@/lib/utils';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 const About: FC = () => {
   return (
@@ -27,9 +29,12 @@ const About: FC = () => {
           since the 1500s, 
         </p>
         <div className="flex justify-center">
-          <button className="w-[140px] h-[50px] bg-gradient-to-r from-[#5DDFFF] to-primary-blue rounded-full text-white">
-            Join
-          </button>
+          <Button
+            asChild
+            className="w-[140px] h-[50px] bg-gradient-to-r from-[#5DDFFF] to-primary-blue rounded-full text-white"
+          >
+            <Link href="/sign-in">Sign In</Link>
+          </Button>
         </div>
       </div>
     </div>
